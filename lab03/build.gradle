@@ -9,3 +9,11 @@ dependencies{
     	name: 'commons-csv',
     	version: '1.4'
 }
+
+task (run, dependsOn: 'classes', type:JavaExec){
+	main = 'CSVDemo'
+	classpath = sourceSets.main.runtimeClasspath
+}
+
+
+
